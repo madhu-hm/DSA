@@ -26,7 +26,6 @@ public class ArrayList<E> {
 	}
 	
 	// To get element at specific index
-	@SuppressWarnings("unchecked")
 	public E get(int index) {
 		if(index<0 || index>=size) {
 			throw new IndexOutOfBoundsException("Index: "+index+", Size: "+size);
@@ -35,7 +34,6 @@ public class ArrayList<E> {
 	}
 	
 	// To remove element at specific index
-	@SuppressWarnings("unchecked")
 	public E remove(int index) {
 		if(index<0 || index>=size) {
 			throw new IndexOutOfBoundsException("Index: "+index+", Size:"+size);
